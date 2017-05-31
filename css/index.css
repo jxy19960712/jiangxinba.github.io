@@ -1,0 +1,243 @@
+body {
+  background-color: #ccc;
+}
+.phonebox {
+  max-width: 640px;
+  min-width: 320px;
+  height: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.center {
+  width: 100%;
+}
+.posr {
+  position: relative;
+}
+/*通用样式结束*/
+.top-bar {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  left: 0;
+  z-index: 999;
+}
+.top-bar .top-bar-in {
+  max-width: 640px;
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+}
+.top-bar .top-bar-in .cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #c91523;
+  opacity: 0;
+}
+.top-bar .top-bar-in form {
+  height: 100%;
+  padding: 0 50px 0 70px;
+}
+.top-bar .top-bar-in form::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  width: 28px;
+  height: 75%;
+  background: url("../images/sprites.png") no-repeat -56px -103px;
+  -webkit-background-size: 200px 200px;
+  background-size: 200px 200px;
+}
+.top-bar .top-bar-in form input {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 0.75%;
+  height: 80%;
+  text-indent: 2em;
+}
+.top-bar .top-bar-in .login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 50px;
+  height: 100%;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+.top-bar .top-bar-in .logo {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  height: 30px;
+  width: 60px;
+  background: url("../images/sprites.png") no-repeat 0 -103px;
+  -webkit-background-size: 200px 200px;
+  background-size: 200px 200px;
+  margin-left: 5px;
+}
+/*--------------top栏结束------------*/
+.banner {
+  width: 100%;
+  background-color: red;
+  overflow: hidden;
+}
+.banner .banner-picbox {
+  width: 1000%;
+  transform: translateX(-640px);
+}
+.banner .banner-picbox li {
+  width: 10%;
+}
+.banner .banner-picbox li img {
+  width: 100%;
+  vertical-align: middle;
+}
+.banner .banner-index {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.banner .banner-index li {
+  display: inline-block;
+  margin-right: 10px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.current {
+  background-color: #fff;
+}
+/*--------------banner结束------------*/
+.menu li {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 20px 0;
+}
+/*--------------menu结束------------*/
+.container {
+  width: 100%;
+  height: 1000px;
+  background-color: #eee;
+  padding: 10px;
+}
+.secondKill-box {
+  width: 100%;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  /*----顶部结束----*/
+}
+.secondKill-box .secondKill-top {
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+}
+.secondKill-box .secondKill-top .secondKill-logo {
+  height: 100%;
+  width: 18px;
+  background: url("../images/seckill-icon.png") no-repeat center;
+  -webkit-background-size: 18px;
+  background-size: 18px;
+  margin: 0 10px;
+}
+.secondKill-box .secondKill-top .secondKill-txt {
+  font-size: 14px;
+  line-height: 32px;
+  color: #333;
+}
+.secondKill-box .secondKill-top .sceondKill-time-box {
+  margin-left: 15px;
+}
+.secondKill-box .secondKill-top .sceondKill-time-box span {
+  float: left;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0 2px;
+  background-color: #000;
+  color: #fff;
+  margin: 9px 2px;
+}
+.secondKill-box .secondKill-top .sceondKill-time-box span:nth-child(3n) {
+  background-color: #fff;
+  color: #333;
+}
+.secondKill-box .secondKill-top .sceondKill-time-more {
+  color: #333;
+  font-size: 14px;
+  line-height: 32px;
+  padding: 0 5px;
+}
+.secondKill-box .secondKill-cp {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.secondKill-box .secondKill-cp li {
+  float: left;
+  display: inline-block;
+  width: 33.33%;
+}
+.secondKill-box .secondKill-cp li a {
+  display: block;
+  width: 100%;
+}
+.secondKill-box .secondKill-cp li a img {
+  display: inline-block;
+  width: 60%;
+}
+.secondKill-box .secondKill-cp li p {
+  color: red;
+}
+.secondKill-box .secondKill-cp li:nth-child(2) a {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.supermarket-box {
+  width: 100%;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.supermarket-box .supermarket-top {
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.supermarket-box .supermarket-top span {
+  font-size: 14px;
+  line-height: 32px;
+}
+.supermarket-box .supermarket-top span::before {
+  content: '';
+  float: left;
+  height: 18px;
+  width: 2px;
+  background-color: red;
+  margin: 7px 5px 0 5px;
+}
+.supermarket-box .supermarket-cp div {
+  width: 50%;
+}
+.supermarket-box .supermarket-cp div a {
+  width: 100%;
+}
+.supermarket-box .supermarket-cp div a img {
+  width: 100%;
+  float: left;
+  vertical-align: middle;
+}
+.supermarket-box .supermarket-cp div:nth-child(2),
+.supermarket-box .supermarket-cp div:nth-child(3) {
+  border-left: 1px solid #ccc;
+}

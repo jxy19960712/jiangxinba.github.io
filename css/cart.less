@@ -1,0 +1,272 @@
+.center{
+  width: 100%;
+}
+.posr{
+  position: relative;
+}
+body{
+  background-color: #ccc;
+}
+/*-------通用样式结束---------*/
+.cart-box {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 100%;
+  header{
+    height: 44px;
+    background: url("../images/header-bg.png");
+    -webkit-background-size:1px;
+    background-size:1px;
+    border-bottom:1px solid #ccc;
+    padding:0 40px;
+    p{
+      height: 100%;
+      font-size: 20px;
+      text-align: center;
+      line-height: 44px;
+      color: #666;
+    }
+    .retrun-btn,.menu-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: url("../images/sprites.png")no-repeat -20px 0;
+      -webkit-background-size:200px;
+      background-size:200px;
+      margin-top: 12px;
+      margin-left: 9px;
+    }
+    .menu-btn{
+      left:auto;
+      right: 0;
+      background-position: -60px 0;
+      margin-right: 9px;
+    }
+  }
+  .safe{
+    width: 100%;
+    height: 34px;
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+    p{
+      padding-left:25px;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 34px;
+      color: #666;
+      &::before{
+        position: absolute;
+        top: 8px;
+        margin-left: -25px;
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url("../images/safe_icon.png") no-repeat;
+        -webkit-background-size:18px;
+        background-size:18px;
+      }
+    }
+  }
+  section{
+    padding-top:10px;
+    background-color: #eee;
+    .cp-box-top{
+      height: 34px;
+      border-top:1px solid #ccc;
+      background-color: #fff;
+      a{
+        height: 20px;
+        width: 20px;
+        background: url("../images/shop-icon.png") no-repeat 0px 0px;
+        -webkit-background-size:50px 100px;
+        background-size:50px 100px;
+        margin:7px 10px 7px 10px;
+      }
+      img{
+        width: 16px;
+        margin-top:8px;
+        margin-bottom:8px;
+      }
+      span{
+        height: 100%;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 34px;
+        margin-left: 10px;
+      }
+      p{
+        line-height:34px;
+        margin-right: 10px;
+        color: #d8505c;
+      }
+    }
+    .cp-box-main{
+      background-color: #fff;
+      overflow: hidden;
+      padding-right: 10px;
+      .selecked{
+        float: left;
+        height: 20px;
+        width: 20px;
+        background: url("../images/shop-icon.png") no-repeat -25px 0px;
+        -webkit-background-size:50px 100px;
+        background-size:50px 100px;
+        margin:7px 10px 7px 10px;
+      }
+      .cp-box-main-cp{
+        height: 100px;
+        //background-color: blue;
+        overflow: hidden;
+        img{
+          height: 90%;
+          margin-top: 0.8%;
+        }
+        .cp-box-main-cp-text{
+          overflow: hidden;
+          height: 40px;
+          font-size: 14px;
+          margin-top: 10px;
+          color: #666;
+        }
+        .cp-box-main-cp-text2{
+          overflow: hidden;
+          color: #d8505c;
+        }
+        .comupute-text{
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          >*{
+            float: left;
+            width: 32px;
+            height: 24px;
+          }
+          span{
+            font-size: 15px;
+            text-align: center;
+            line-height:24px;
+          }
+          input{
+            text-indent: 1em;
+            border-left:1px solid #ccc;
+            border-right:1px solid #ccc;
+          }
+        }
+        .garbage{
+          margin-right: 10px;
+          cursor: pointer;
+          .garbage-top{
+            display: block;
+            width: 18px;
+            height: 4px;
+            background: url("../images/delete_up.png");
+            -webkit-background-size:18px;
+            background-size:18px;
+            -webkit-transition: transform 1s;
+            transition: transform 1s;
+            -webkit-transform: rotate(0deg);
+            transform:rotate(0deg) ;
+            -webkit-transform-origin: top left;
+            transform-origin: top left;
+          }
+          .garbage-bottom{
+            display: block;
+            width: 18px;
+            height: 18px;
+            background: url("../images/delete_down.png");
+            -webkit-background-size:18px;
+            background-size:18px;
+            -webkit-transform:translateY(-2px) ;
+            transform:translateY(-2px) ;
+          }
+        }
+        .garbage.flag{
+          .garbage-top{
+            -webkit-transform: rotate(-20deg);
+            transform:rotate(-20deg) ;
+            -webkit-transform-origin: top left;
+            transform-origin: top left;
+            -webkit-transition: transform 1s;
+            transition: transform 1s;
+          }
+        }
+      }
+    }
+  }
+  .cover{
+    display: none;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    padding:0 10%;
+    .delbox{
+      -webkit-transform:translateY(240px) ;
+      transform:translateY(240px) ;
+      width: 100%;
+      background-color: #fff;
+      -webkit-animation:down 1 0.6s normal ease-out;
+      animation:down 1 0.6s normal ease-out;
+      padding:10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      text-align: center;
+      p{
+        text-align: center;
+        font-size: 16px;
+        line-height:40px;
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+      }
+      span{
+        cursor: pointer;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        line-height:36px;
+        width: 45%;
+        height: 36px;
+        border: 1px solid #ccc;
+      }
+      span:nth-child(3){
+        color:#fff;
+        background-color: #d8505c;
+      }
+    }
+
+  }
+}
+
+@keyframes down {
+  0%{
+    -webkit-transform:translateY(-50px) ;
+    transform:translateY(-50px) ;
+  }
+  70%{
+    -webkit-transform:translateY(280px) ;
+    transform:translateY(280px) ;
+  }
+  80%{
+    -webkit-transform:translateY(240px) ;
+    transform:translateY(240px) ;
+  }
+  90%{
+    -webkit-transform:translateY(270px) ;
+    transform:translateY(270px) ;
+  }
+  100%{
+    -webkit-transform:translateY(240px) ;
+    transform:translateY(240px) ;
+  }
+}
+

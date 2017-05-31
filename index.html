@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/reset - mobile.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="phonebox">
+    <div class="top-bar">
+        <div class="top-bar-in  posr">
+            <div class="cover"></div>
+            <form class="posr">
+                <input class="center" type="search" placeholder="死肥宅专用plan杯...">
+            </form>
+            <a class="logo" href="javascript:"></a>
+            <a class="login" href="javascript:">登录</a>
+        </div>
+    </div>
+    <!--————————————————top栏结束————————————————-->
+    <div class="banner posr">
+        <ul class="banner-picbox">
+            <li class="fl"><img src="images/l8.jpg" alt=""></li>
+            <li class="fl"><img src="images/l1.jpg" alt=""></li>
+            <li class="fl"><img src="images/l2.jpg" alt=""></li>
+            <li class="fl"><img src="images/l3.jpg" alt=""></li>
+            <li class="fl"><img src="images/l4.jpg" alt=""></li>
+            <li class="fl"><img src="images/l5.jpg" alt=""></li>
+            <li class="fl"><img src="images/l6.jpg" alt=""></li>
+            <li class="fl"><img src="images/l7.jpg" alt=""></li>
+            <li class="fl"><img src="images/l8.jpg" alt=""></li>
+            <li class="fl"><img src="images/l1.jpg" alt=""></li>
+        </ul>
+        <ul class="banner-index">
+            <li class="fl current"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+            <li class="fl"></li>
+        </ul>
+    </div>
+    <!--——————————————————————————banner结束——————————————-->
+    <div class="menu">
+        <ul class="center clearfix">
+            <li><img width="40" src="images/nav0.png" alt="">
+                <p>商品分类</p></li>
+            <li><img width="40" src="images/nav1.png" alt="">
+                <p>商品分类</p></li>
+            <li><img width="40" src="images/nav2.png" alt="">
+                <p>商品分类</p></li>
+            <li><img width="40" src="images/nav3.png" alt="">
+                <p>商品分类</p></li>
+            <li><img width="40" src="images/nav4.png" alt="">
+                <p>商品分类</p></li>
+            <li><img width="40" src="images/nav5.png" alt="">
+                <p>商品分类</p></li>
+            <li><img width="40" src="images/nav6.png" alt="">
+                <p>商品分类</p></li>
+            <li><img width="40" src="images/nav7.png" alt="">
+                <p>商品分类</p></li>
+        </ul>
+    </div>
+    <!--————————————————————————menu栏结束————————————————-->
+    <div class="container">
+        <div class="secondKill-box">
+            <div class="secondKill-top">
+                <span class="secondKill-logo fl"></span>
+                <span class="secondKill-txt fl">
+                        掌上秒杀
+                    </span>
+                <div class="sceondKill-time-box fl">
+                    <span>0</span>
+                    <span>0</span>
+                    <span>:</span>
+                    <span>0</span>
+                    <span>0</span>
+                    <span>:</span>
+                    <span>0</span>
+                    <span>0</span>
+                </div>
+                <a class="sceondKill-time-more fr" href="javascript">更多>></a>
+            </div>
+            <ul class="secondKill-cp clearfix">
+                <li>
+                    <a href="javascript:"><img src="images/detail01.jpg" alt=""></a>
+                    <p>9.9</p>
+                    <del>100</del>
+                </li>
+                <li>
+                    <a href="javascript:"><img src="images/detail02.jpg" alt=""></a>
+                    <p>9.9</p>
+                    <del>100</del>
+                </li>
+                <li>
+                    <a href="javascript:"><img src="images/detail01.jpg" alt=""></a>
+                    <p>9.9</p>
+                    <del>100</del>
+                </li>
+            </ul>
+        </div>
+        <!--————————————————秒杀栏结束————————————-->
+        <div class="supermarket-box">
+            <div class="supermarket-top">
+                <span>京东超市</span>
+            </div>
+            <div class="supermarket-cp center clearfix">
+                <div class="fl"><a href="javascript:">
+                    <img src="images/cp1.jpg" alt="">
+                </a></div>
+                <div class="fr"><a href="javascript:">
+                    <img src="images/cp2.jpg" alt="">
+                </a></div>
+                <div class="fr"><a href="javascript:">
+                    <img src="images/cp2.jpg" alt="">
+                </a></div>
+            </div>
+        </div>
+        <div class="supermarket-box">
+            <div class="supermarket-top">
+                <span>京东超市</span>
+            </div>
+            <div class="supermarket-cp center clearfix">
+                <div class="fr"><a href="javascript:">
+                    <img src="images/cp4.jpg" alt="">
+                </a></div>
+                <div class="fl"><a href="javascript:">
+                    <img src="images/cp5.jpg" alt="">
+                </a></div>
+                <div class="fl"><a href="javascript:">
+                    <img src="images/cp6.jpg" alt="">
+                </a></div>
+            </div>
+        </div>
+        <!--————————————————秒商品栏结束————————————-->
+    </div>
+</div>
+<script type="text/javascript">
+    window.onload = function () {
+        opChange();
+        window.onscroll = opChange;
+        function opChange() {
+            var topGet = document.querySelector('.top-bar-in .cover')
+            var scrT = document.body.scrollTop;
+            var bannerH = document.querySelector('.banner').offsetHeight
+            console.log(scrT)
+            topGet.style.opacity = (scrT / bannerH);
+        }
+
+//        ------------------fixed栏渐变结束-----------
+        var timeboxGet = document.querySelector('.sceondKill-time-box').children
+        var time = 5 * 60 * 60;
+        console.log(Math.floor(time / 3600))
+        var timedate = setInterval(function () {
+            time--
+            timeboxGet[0].innerText = Math.floor((time / 3600) / 10);
+            timeboxGet[1].innerText = Math.floor((time / 3600) % 10);
+            timeboxGet[3].innerText = parseInt(Math.floor(time / 60) / (time / 3600) / 10);
+            timeboxGet[4].innerText = Math.floor((time / 60) % 10);
+            timeboxGet[6].innerText = Math.floor((time % 60) / 10);
+            timeboxGet[7].innerText = parseInt(Math.floor(time % 60) % 10);
+            if (time <= 0) {
+                clearInterval(timedate)
+            }
+        }, 1000)
+        //        ------------------秒杀时间结束-----------
+        var bannerboxGet = document.querySelector('.banner-picbox')
+        var bannerWindow = document.querySelector('.banner')
+        var bannerIndexGet = document.querySelectorAll('.banner-index li')
+        var index = 1;
+        var timeDate = setInterval(intv, 1500)
+
+        function intv() {
+            index++
+            bannerboxGet.style.transition = 'transform 200ms linear';
+            bannerboxGet.style.webkitTransition = 'transform 200ms linear';
+            bannerboxGet.style.transform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+            bannerboxGet.style.webkitTransform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+            bannerboxGet.addEventListener('webkitTransitionEnd', function () {
+                if (index >= 9) {
+                    index = 1;
+                    bannerboxGet.style.transition = 'none';
+                    bannerboxGet.style.webkitTransition = 'none';
+                    bannerboxGet.style.transform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+                    bannerboxGet.style.webkitTransform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+                }
+                if (index <= 0) {
+                    index = 8;
+                    bannerboxGet.style.transition = 'none';
+                    bannerboxGet.style.webkitTransition = 'none';
+                    bannerboxGet.style.transform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+                    bannerboxGet.style.webkitTransform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+                }
+//                    -----下标改变----
+                for (var i = 0; i < bannerIndexGet.length; i++) {
+                    bannerIndexGet[i].classList.remove('current')
+                }
+                bannerIndexGet[index - 1].classList.add('current')
+            })
+        }
+
+        //        ------------------定时轮播结束-----------
+        var start = 0;
+        var move = 0;
+        var result = 0;
+        bannerWindow.addEventListener('touchstart', function (e) {
+            start = e.targetTouches[0].clientX;
+            clearInterval(timeDate)
+        })
+        bannerWindow.addEventListener('touchmove', function (e) {
+            move = e.targetTouches[0].clientX;
+            result = start - move;
+            bannerboxGet.style.transition = 'none';
+            bannerboxGet.style.webkitTransition = 'none';
+            bannerboxGet.style.transform = 'translateX(-' + (index * bannerWindow.offsetWidth + result) + 'px)';
+            bannerboxGet.style.webkitTransform = 'translateX(-' + (index * bannerWindow.offsetWidth + result) + 'px)';
+        })
+        bannerWindow.addEventListener('touchend', function () {
+            timeDate = setInterval(intv, 1500)
+            if(result>bannerWindow.offsetWidth/3){
+                index++
+                bannerboxGet.style.transition = 'transform 200ms linear';
+                bannerboxGet.style.webkitTransition = 'transform 200ms linear';
+                bannerboxGet.style.transform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+                bannerboxGet.style.webkitTransform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+            }
+                else if(result<-bannerWindow.offsetWidth/3){
+                index--
+                bannerboxGet.style.transition = 'transform 200ms linear';
+                bannerboxGet.style.webkitTransition = 'transform 200ms linear';
+                bannerboxGet.style.transform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+                bannerboxGet.style.webkitTransform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+            }
+            else {
+                bannerboxGet.style.transition = 'transform 200ms linear';
+                bannerboxGet.style.webkitTransition = 'transform 200ms linear';
+                bannerboxGet.style.transform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+                bannerboxGet.style.webkitTransform = 'translateX(-' + index * bannerWindow.offsetWidth + 'px)';
+            }
+            start = 0;
+            move = 0;
+            result = 0;
+        })
+    }
+
+
+</script>
+</body>
+</html>
